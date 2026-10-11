@@ -30,9 +30,9 @@
 .checkout-form input,
 .checkout-form textarea {
   padding: 0.85rem 1rem;
-  background: rgba(17, 17, 17, 0.6);
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(63, 125, 107, 0.3);
+  color: var(--color-ink);
   border-radius: 2px;
   font-size: 0.95rem;
   text-transform: none;
@@ -57,7 +57,7 @@
   align-items: flex-start;
   gap: 1rem;
   padding: 1rem 1.25rem;
-  border: 1px solid rgba(212, 175, 55, 0.2);
+  border: 1px solid rgba(63, 125, 107, 0.2);
   border-radius: 4px;
   cursor: pointer;
   transition: border-color 0.2s ease;
@@ -67,7 +67,7 @@
 
 .payment-option.active {
   border-color: var(--color-gold);
-  background: rgba(212, 175, 55, 0.06);
+  background: rgba(63, 125, 107, 0.06);
 }
 
 .payment-option input {
@@ -75,7 +75,7 @@
 }
 
 .payment-option strong {
-  color: #fff;
+  color: var(--color-ink);
   font-size: 0.95rem;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .checkout-error {
-  color: #ff6b6b;
+  color: #c0392b;
   font-size: 0.85rem;
 }
 
@@ -117,12 +117,12 @@
   padding: 0.6rem 0;
   color: var(--color-text-body);
   font-size: 0.9rem;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  border-bottom: 1px solid rgba(63, 125, 107, 0.15);
 }
 
 .checkout-summary-total {
   border-bottom: none;
-  color: #fff;
+  color: var(--color-ink);
   font-weight: 700;
   font-size: 1.1rem;
   padding-top: 1rem;

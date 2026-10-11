@@ -1,12 +1,17 @@
 :root {
-  --color-charcoal: #111111;
-  --color-charcoal-soft: #1a1a1a;
-  --color-gold: #d4af37;
-  --color-gold-bright: #ffd700;
-  --color-gold-highlight: #ffed4e;
-  --color-text-body: #d1d1d1;
-  --color-text-muted: #9a9a9a;
-  --font-serif: 'Cinzel', serif;
+  /* Light "fresh soap" theme. Variable names are kept from the old dark theme so
+     every stylesheet picks up the new palette: charcoal = page background,
+     gold = accent green, text-body/ink = text colours. */
+  --color-charcoal: #fbf7f2;
+  --color-charcoal-soft: #f1ebe3;
+  --color-gold: #3f7d6b;
+  --color-gold-bright: #2f6b5a;
+  --color-gold-highlight: #3f7d6b;
+  --color-ink: #2b2623;
+  --color-surface: #ffffff;
+  --color-text-body: #4a423d;
+  --color-text-muted: #7a706a;
+  --font-serif: 'Playfair Display', Georgia, serif;
   --font-body: 'Open Sans', sans-serif;
   --container-max: 1280px;
 }
@@ -72,50 +77,28 @@ ul {
   padding: 5rem 0;
 }
 
-@keyframes goldShimmer {
-  0% { background-position: 0% 0; }
-  100% { background-position: 300% 0; }
-}
-
 .shiny-gold-text {
-  background: linear-gradient(
-    135deg,
-    var(--color-gold-bright) 0%,
-    var(--color-gold-highlight) 25%,
-    var(--color-gold-bright) 50%,
-    var(--color-gold) 75%,
-    var(--color-gold-bright) 100%
-  );
-  background-size: 300% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
-  animation: goldShimmer 4s linear infinite;
+  color: var(--color-gold-bright);
 }
 
 .heading-xl {
   font-size: clamp(2.5rem, 6vw, 5rem);
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.01em;
   line-height: 1.1;
 }
 
 .heading-lg {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
 }
 
 .eyebrow {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.3em;
-  color: var(--color-gold);
+  color: var(--color-gold-bright);
 }
 
 .btn {
@@ -135,23 +118,24 @@ ul {
 
 .btn-gold {
   background: var(--color-gold-bright);
-  color: var(--color-charcoal);
+  color: #fff;
+  border-radius: 999px;
 }
 
 .btn-gold:hover {
-  transform: scale(1.04);
-  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(47, 107, 90, 0.28);
 }
 
 .btn-outline {
-  background: rgba(17, 17, 17, 0.3);
-  border-color: rgba(255, 215, 0, 0.6);
+  background: transparent;
+  border-color: var(--color-gold-bright);
   color: var(--color-gold-bright);
-  backdrop-filter: blur(6px);
+  border-radius: 999px;
 }
 
 .btn-outline:hover {
-  background: rgba(255, 215, 0, 0.1);
+  background: rgba(63, 125, 107, 0.1);
 }
 
 .btn:disabled {
@@ -162,20 +146,23 @@ ul {
 }
 
 .gold-panel {
-  background: rgba(17, 17, 17, 0.5);
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  border-radius: 8px;
-  transition: border-color 0.25s ease;
+  background: var(--color-surface);
+  border: 1px solid rgba(43, 38, 35, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 2px 14px rgba(43, 38, 35, 0.05);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .gold-panel:hover {
-  border-color: rgba(212, 175, 55, 0.5);
+  border-color: rgba(63, 125, 107, 0.4);
+  box-shadow: 0 8px 24px rgba(43, 38, 35, 0.08);
 }
 
 .page-hero {
   padding: 8rem 0 3rem;
   text-align: center;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  border-bottom: 1px solid rgba(43, 38, 35, 0.08);
+  background: var(--color-charcoal-soft);
 }
 
 @media (max-width: 720px) {

@@ -25,9 +25,9 @@
 .product-form input,
 .product-form textarea {
   padding: 0.7rem 0.9rem;
-  background: rgba(17, 17, 17, 0.6);
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(63, 125, 107, 0.3);
+  color: var(--color-ink);
   border-radius: 2px;
   text-transform: none;
   letter-spacing: normal;
@@ -51,7 +51,7 @@
   height: 120px;
   object-fit: cover;
   border-radius: 4px;
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid rgba(63, 125, 107, 0.3);
 }
 
 .product-form-note {
@@ -60,7 +60,7 @@
 }
 
 .product-form-error {
-  color: #ff6b6b;
+  color: #c0392b;
   font-size: 0.85rem;
 }
 

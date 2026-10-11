@@ -35,7 +35,7 @@
 .product-detail-price {
   font-size: 2rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-ink);
   margin: 1.5rem 0;
 }
 
@@ -62,7 +62,7 @@
 
 .product-detail-ingredients li {
   padding: 0.4rem 0.9rem;
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid rgba(63, 125, 107, 0.3);
   border-radius: 999px;
   font-size: 0.8rem;
   color: var(--color-text-body);
@@ -78,7 +78,7 @@
 .qty-stepper {
   display: flex;
   align-items: center;
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid rgba(63, 125, 107, 0.3);
   border-radius: 2px;
 }
 
@@ -94,7 +94,7 @@
 .qty-stepper span {
   min-width: 2rem;
   text-align: center;
-  color: #fff;
+  color: var(--color-ink);
 }
 
 .added-message {

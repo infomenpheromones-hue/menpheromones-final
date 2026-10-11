@@ -4,9 +4,9 @@
   left: 0;
   right: 0;
   z-index: 50;
-  background: rgba(17, 17, 17, 0.65);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  border-bottom: 1px solid rgba(63, 125, 107, 0.2);
 }
 
 .navbar-inner {
@@ -35,7 +35,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--color-ink);
   transition: color 0.25s ease;
 }
 

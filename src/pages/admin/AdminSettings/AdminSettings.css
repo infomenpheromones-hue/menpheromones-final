@@ -33,15 +33,15 @@
   letter-spacing: 0.05em;
   padding: 0.3rem 0.7rem;
   border-radius: 999px;
-  background: rgba(212, 175, 55, 0.15);
+  background: rgba(63, 125, 107, 0.15);
   color: var(--color-text-muted);
-  border: 1px solid rgba(212, 175, 55, 0.3);
+  border: 1px solid rgba(63, 125, 107, 0.3);
   white-space: nowrap;
 }
 
 .admin-settings-badge.configured {
   color: var(--color-gold-bright);
-  border-color: rgba(255, 215, 0, 0.5);
+  border-color: rgba(63, 125, 107, 0.5);
 }
 
 .admin-settings-hint {
@@ -69,9 +69,9 @@
 
 .admin-settings-form input {
   padding: 0.7rem 0.9rem;
-  background: rgba(17, 17, 17, 0.6);
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(63, 125, 107, 0.3);
+  color: var(--color-ink);
   border-radius: 2px;
   text-transform: none;
   letter-spacing: normal;
@@ -92,7 +92,7 @@
 }
 
 .admin-settings-error {
-  color: #ff6b6b;
+  color: #c0392b;
   font-size: 0.85rem;
 }
 

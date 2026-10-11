@@ -11,7 +11,7 @@
 }
 
 .admin-products-error {
-  color: #ff6b6b;
+  color: #c0392b;
   margin-bottom: 1rem;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .admin-product-info strong {
-  color: #fff;
+  color: var(--color-ink);
 }
 
 .admin-product-info span {
@@ -64,7 +64,7 @@
 
 .admin-product-delete {
   border-color: rgba(255, 107, 107, 0.5);
-  color: #ff6b6b;
+  color: #c0392b;
 }
 
 .admin-product-delete:hover {

@@ -15,8 +15,8 @@ export default function RefundPolicy() {
         <div className="container legal-content">
           <h2>Order Cancellation</h2>
           <p>
-            You can cancel an order before it is shipped by contacting us at {site.email} or {site.phone}
-            with your order details. Once an order has been shipped it cannot be cancelled, but you may
+            You can cancel an order before it is shipped by contacting us at {site.email} or{' '}
+            {site.phone} with your order details. Once an order has been shipped it cannot be cancelled, but you may
             still be eligible for a return as described below.
           </p>
 

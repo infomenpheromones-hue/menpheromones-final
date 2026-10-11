@@ -29,7 +29,7 @@
 .cart-item-info h3 {
   font-size: 1rem;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--color-ink);
 }
 
 .cart-item-info p {
@@ -53,7 +53,7 @@
 }
 
 .cart-item-remove:hover {
-  color: #ff6b6b;
+  color: #c0392b;
 }
 
 .cart-summary {
@@ -74,12 +74,12 @@
   padding: 0.6rem 0;
   color: var(--color-text-body);
   font-size: 0.9rem;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  border-bottom: 1px solid rgba(63, 125, 107, 0.15);
 }
 
 .cart-summary-total {
   border-bottom: none;
-  color: #fff;
+  color: var(--color-ink);
   font-weight: 700;
   font-size: 1.1rem;
   padding-top: 1rem;
