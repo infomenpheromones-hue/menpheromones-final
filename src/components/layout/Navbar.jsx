@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
+import { site } from '../../lib/siteConfig'
 import './Navbar.css'
 
 const links = [
   { to: '/products', label: 'Products' },
-  { to: '/science', label: 'Science' },
   { to: '/contact', label: 'Contact' },
 ]
 
@@ -15,7 +15,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-inner container">
         <NavLink to="/" className="navbar-brand shiny-gold-text">
-          Menpheromones
+          {site.brand}
         </NavLink>
         <div className="navbar-links">
           {links.map((link) => (

@@ -1,8 +1,12 @@
 import { supabase, isSupabaseConfigured } from './supabaseClient'
 import { seedProducts } from './seedProducts'
 
+// Temporary: serve the simple fragrance-soap catalog from seedProducts.js instead of
+// the Supabase `products` table. Set to false to go back to database products.
+const USE_TEMP_CATALOG = true
+
 export async function fetchProducts() {
-  if (!isSupabaseConfigured) return seedProducts
+  if (USE_TEMP_CATALOG || !isSupabaseConfigured) return seedProducts
 
   const { data, error } = await supabase
     .from('products')
@@ -17,7 +21,7 @@ export async function fetchProducts() {
 }
 
 export async function fetchProductBySlug(slug) {
-  if (!isSupabaseConfigured) {
+  if (USE_TEMP_CATALOG || !isSupabaseConfigured) {
     return seedProducts.find((p) => p.slug === slug) || null
   }
 

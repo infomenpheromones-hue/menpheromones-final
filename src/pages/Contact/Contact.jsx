@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { supabase, isSupabaseConfigured } from '../../lib/supabaseClient'
+import { site } from '../../lib/siteConfig'
 import './Contact.css'
 
 export default function Contact() {
@@ -78,13 +79,10 @@ export default function Contact() {
           <div className="contact-details">
             <div className="gold-panel contact-detail-card">
               <h4 className="shiny-gold-text">Business Details</h4>
-              <p>Menpheromones</p>
-              <p>Email: hello@menpheromones.com</p>
-              <p>Phone: +91 00000 00000</p>
-              <p className="contact-placeholder-note">
-                (Placeholder contact details — send the real business phone/email/address to update this
-                section.)
-              </p>
+              <p>{site.legalName}</p>
+              <p>Email: {site.email}</p>
+              <p>Phone: {site.phone}</p>
+              <p>Address: {site.address}</p>
             </div>
             <div className="gold-panel contact-detail-card">
               <h4 className="shiny-gold-text">Follow Us</h4>

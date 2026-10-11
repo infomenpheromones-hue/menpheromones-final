@@ -9,7 +9,6 @@ import AdminLayout from './components/admin/AdminLayout'
 import Home from './pages/Home/Home'
 import Products from './pages/Products/Products'
 import ProductDetail from './pages/ProductDetail/ProductDetail'
-import Science from './pages/Science/Science'
 import Cart from './pages/Cart/Cart'
 import Checkout from './pages/Checkout/Checkout'
 import CheckoutSuccess from './pages/Checkout/CheckoutSuccess'
@@ -17,6 +16,8 @@ import Contact from './pages/Contact/Contact'
 import FAQ from './pages/FAQ/FAQ'
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy'
 import Terms from './pages/Terms/Terms'
+import RefundPolicy from './pages/RefundPolicy/RefundPolicy'
+import ShippingPolicy from './pages/ShippingPolicy/ShippingPolicy'
 
 import AdminLogin from './pages/admin/AdminLogin/AdminLogin'
 import AdminDashboard from './pages/admin/AdminDashboard/AdminDashboard'
@@ -53,7 +54,6 @@ export default function App() {
           <Route path="/" element={<PublicLayout><Home /></PublicLayout>} />
           <Route path="/products" element={<PublicLayout><Products /></PublicLayout>} />
           <Route path="/products/:slug" element={<PublicLayout><ProductDetail /></PublicLayout>} />
-          <Route path="/science" element={<PublicLayout><Science /></PublicLayout>} />
           <Route path="/cart" element={<PublicLayout><Cart /></PublicLayout>} />
           <Route path="/checkout" element={<PublicLayout><Checkout /></PublicLayout>} />
           <Route path="/checkout/success" element={<PublicLayout><CheckoutSuccess /></PublicLayout>} />
@@ -61,6 +61,8 @@ export default function App() {
           <Route path="/faq" element={<PublicLayout><FAQ /></PublicLayout>} />
           <Route path="/privacy-policy" element={<PublicLayout><PrivacyPolicy /></PublicLayout>} />
           <Route path="/terms" element={<PublicLayout><Terms /></PublicLayout>} />
+          <Route path="/refund-policy" element={<PublicLayout><RefundPolicy /></PublicLayout>} />
+          <Route path="/shipping-policy" element={<PublicLayout><ShippingPolicy /></PublicLayout>} />
 
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route element={<ProtectedRoute />}>

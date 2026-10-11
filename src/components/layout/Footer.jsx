@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { site } from '../../lib/siteConfig'
 import './Footer.css'
 
 export default function Footer() {
@@ -17,15 +18,19 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-grid">
         <div>
-          <h3 className="shiny-gold-text footer-title">Science of Attraction</h3>
+          <h3 className="shiny-gold-text footer-title">{site.brand}</h3>
           <p className="footer-text">
-            Where science meets attraction. Unlock the power of human pheromones and experience the
-            transformation.
+            Simple, gentle fragrance soaps for everyday use.
+          </p>
+          <p className="footer-text">
+            {site.email}<br />
+            {site.phone}<br />
+            {site.address}
           </p>
         </div>
         <div>
           <h4 className="footer-heading shiny-gold-text">Newsletter</h4>
-          <p className="footer-text">Stay updated with the latest research and exclusive offers.</p>
+          <p className="footer-text">Get news about new fragrances and offers.</p>
           {subscribed ? (
             <p className="footer-subscribed">You're on the list.</p>
           ) : (
@@ -55,10 +60,12 @@ export default function Footer() {
         </div>
       </div>
       <div className="container footer-bottom">
-        <p>© {new Date().getFullYear()} Menpheromones. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} {site.brand}. All rights reserved.</p>
         <div className="footer-legal">
           <Link to="/privacy-policy">Privacy Policy</Link>
-          <Link to="/terms">Terms of Service</Link>
+          <Link to="/terms">Terms &amp; Conditions</Link>
+          <Link to="/refund-policy">Refund &amp; Cancellation</Link>
+          <Link to="/shipping-policy">Shipping Policy</Link>
           <Link to="/faq">FAQ</Link>
         </div>
       </div>

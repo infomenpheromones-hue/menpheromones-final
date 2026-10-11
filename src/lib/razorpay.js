@@ -43,7 +43,7 @@ export async function payWithRazorpay({ amount, customer }) {
       key: keyId,
       amount: orderData.amount,
       currency: 'INR',
-      name: 'Menpheromones',
+      name: 'Aroma Soap Co.',
       description: 'Order Payment',
       order_id: orderData.orderId,
       prefill: {

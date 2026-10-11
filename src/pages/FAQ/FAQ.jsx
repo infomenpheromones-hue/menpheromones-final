@@ -3,8 +3,8 @@ import './FAQ.css'
 
 const faqs = [
   {
-    q: 'How do I use Menpheromones soap?',
-    a: 'Use it daily as part of your regular shower routine. For best results, apply to pulse points (neck, chest, wrists) and let it air dry rather than towel-drying those areas immediately.',
+    q: 'How do I use the soap?',
+    a: 'Wet the bar, lather between your hands or on a cloth, apply to skin and rinse well. Keep the bar on a draining soap dish between uses.',
   },
   {
     q: 'How long does one bar last?',
@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     q: 'Are the ingredients safe for sensitive skin?',
-    a: 'Yes — our formulations use skin-friendly botanicals. As with any personal care product, we recommend a patch test if you have known sensitivities.',
+    a: 'Our soaps are made to be mild. As with any personal care product, we recommend a patch test if you have known sensitivities.',
   },
   {
     q: 'What payment methods do you accept?',
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'What is your return policy?',
-    a: 'See our Terms of Service page for full details on returns and refunds.',
+    a: 'See our Refund & Cancellation Policy page for full details.',
   },
 ]
 
