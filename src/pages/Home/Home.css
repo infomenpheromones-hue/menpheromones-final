@@ -1,0 +1,337 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.35), rgba(17, 17, 17, 0.55) 60%, rgba(17, 17, 17, 0.85)),
+    linear-gradient(to right, rgba(212, 175, 55, 0.12), transparent 40%, rgba(212, 175, 55, 0.12));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-frame {
+  position: relative;
+  padding: 2.5rem clamp(1rem, 6vw, 5rem);
+  margin-bottom: 2.5rem;
+}
+
+.hero-frame::before,
+.hero-frame::after,
+.hero-frame > .hero-title::before,
+.hero-frame > .hero-title::after {
+  content: '';
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border: 2px solid rgba(212, 175, 55, 0.7);
+}
+
+.hero-frame::before {
+  top: 0;
+  left: 0;
+  border-right: none;
+  border-bottom: none;
+}
+
+.hero-frame::after {
+  top: 0;
+  right: 0;
+  border-left: none;
+  border-bottom: none;
+}
+
+.hero-frame > .hero-title::before {
+  bottom: 0;
+  left: 0;
+  border-right: none;
+  border-top: none;
+}
+
+.hero-frame > .hero-title::after {
+  bottom: 0;
+  right: 0;
+  border-left: none;
+  border-top: none;
+}
+
+.hero-title {
+  text-shadow: 0 0 40px rgba(212, 175, 55, 0.3), 0 0 80px rgba(212, 175, 55, 0.2);
+}
+
+.hero-title-line1 {
+  display: block;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  letter-spacing: 0.35em;
+  margin-bottom: 0.75rem;
+}
+
+.hero-title-line2 {
+  position: relative;
+  display: block;
+  font-size: clamp(3rem, 9vw, 7rem);
+}
+
+.hero-title-line2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  right: -10%;
+  border-top: 1px solid rgba(212, 175, 55, 0.5);
+  z-index: -1;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.feature-card {
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+.feature-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.science-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.science-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.science-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 1.05rem;
+}
+
+.science-list .bullet {
+  color: var(--color-gold-bright);
+  font-size: 1.2rem;
+}
+
+.science-diagram {
+  padding: 2rem;
+}
+
+.science-diagram-caption {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonial-wrap {
+  max-width: 760px;
+}
+
+.testimonial-card {
+  padding: 3rem 2.5rem;
+  text-align: center;
+}
+
+.stars {
+  color: var(--color-gold-bright);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-quote {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: var(--color-text-body);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.testimonial-name {
+  color: var(--color-gold-bright);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.testimonial-age {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 2rem;
+}
+
+.testimonial-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: none;
+  background: rgba(212, 175, 55, 0.3);
+  padding: 0;
+  transition: width 0.25s ease, background 0.25s ease;
+}
+
+.testimonial-dot.active {
+  width: 28px;
+  background: var(--color-gold-bright);
+}
+
+.ingredient-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.ingredient-tab {
+  padding: 0.85rem 1.5rem;
+  background: transparent;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: var(--color-gold);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 2px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.ingredient-tab.active {
+  background: var(--color-gold-bright);
+  color: var(--color-charcoal);
+}
+
+.ingredient-detail {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.ingredient-visual {
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, rgba(212, 175, 55, 0.15), transparent 70%);
+}
+
+.ingredient-visual-icon {
+  font-size: 5rem;
+}
+
+.ingredient-name {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.ingredient-subtitle {
+  color: var(--color-gold);
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.ingredient-description {
+  color: var(--color-text-body);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.ingredient-points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.ingredient-points li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.ingredient-points .check {
+  color: var(--color-gold-bright);
+  font-weight: 700;
+}
+
+.cta-section {
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 640px;
+}
+
+.cta-subtitle {
+  font-size: 1.2rem;
+  color: var(--color-text-body);
+  margin: 1.5rem 0 2.5rem;
+}
+
+.cta-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .features-grid,
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .science-grid,
+  .ingredient-detail {
+    grid-template-columns: 1fr;
+  }
+}

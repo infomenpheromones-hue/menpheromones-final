@@ -1,0 +1,71 @@
+.admin-orders-title {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.admin-orders-error {
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+}
+
+.admin-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.admin-order-card {
+  padding: 1.5rem;
+}
+
+.admin-order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.admin-order-header strong {
+  color: #fff;
+  display: block;
+}
+
+.admin-order-date {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+}
+
+.admin-order-header select {
+  padding: 0.5rem 0.75rem;
+  background: rgba(17, 17, 17, 0.6);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: var(--color-gold-bright);
+  border-radius: 2px;
+  text-transform: capitalize;
+}
+
+.admin-order-detail {
+  color: var(--color-text-body);
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+.admin-order-items {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  list-style: disc;
+  color: var(--color-text-body);
+  font-size: 0.85rem;
+}
+
+.admin-order-items li {
+  margin-bottom: 0.25rem;
+}
+
+.admin-order-total {
+  color: var(--color-gold-bright);
+  font-weight: 700;
+}

@@ -1,0 +1,120 @@
+.product-detail {
+  padding: 8rem 0 5rem;
+}
+
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.product-detail-image {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  padding: 0;
+}
+
+.product-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-detail-name {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.product-detail-tagline {
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.product-detail-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 1.5rem 0;
+}
+
+.product-detail-description {
+  color: var(--color-text-body);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.product-detail-ingredients h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-detail-ingredients ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.product-detail-ingredients li {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--color-text-body);
+}
+
+.product-detail-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.qty-stepper {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 2px;
+}
+
+.qty-stepper button {
+  background: none;
+  border: none;
+  color: var(--color-gold-bright);
+  font-size: 1.2rem;
+  width: 2.5rem;
+  height: 2.75rem;
+}
+
+.qty-stepper span {
+  min-width: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.added-message {
+  margin-top: 1.25rem;
+  color: var(--color-gold-bright);
+  font-size: 0.9rem;
+}
+
+.added-message a {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .product-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .product-detail {
+    padding-top: 10rem;
+  }
+}
